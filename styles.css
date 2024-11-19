@@ -296,3 +296,56 @@ footer a:hover {
         margin-top: 0;
     }
 }
+
+ /* Video background styling */
+        .video-background {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .video-background video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .text-carousel-container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+            font-size: 2rem;
+            font-family: Arial, sans-serif;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .text-carousel {
+            display: inline-block;
+        }
+        .text-carousel span {
+            display: none;
+        }
+        .text-carousel span.active {
+            display: inline;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
