@@ -255,23 +255,26 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
+    color: #fff; /* Set the default text color in the footer to white */
 }
 
 footer p {
     margin-bottom: 10px;
+    color: #fff; /* Ensure paragraph text is white */
 }
 
 footer a {
-    color: var(--primary-color);
+    color: #fff; /* Change footer links to white */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 footer a:hover {
-    color: var(--accent-color);
+    color: var(--accent-color); /* Optionally keep hover color as is */
     text-decoration: underline;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
